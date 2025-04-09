@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>فروشگاه استایل کلاسیک</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="cart-toggle-btn" onclick="toggleCart()">🛒 سبد خرید</button>
+    
+    
+    
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">استایل کلاسیک</div>
+   
+    </nav>
+    <div class="hero-content">
+      <h1>با استایل کلاسیک بدرخش</h1>
+      <p>لباس‌های مردانه با الهام از سبک‌های اولدمانی</p>
+      <a href="#" class="btn">ورود به فروشگاه</a>
+    </div>
+  </header>
+  
+  
+  <section class="image-banner">
+  <div class="image-track">
+    <img src="ask1.png" alt="عکس ۱" />
+    <img src="ask2.png" alt="عکس ۲" />
+    <img src="ask3.png" alt="عکس ۳" />
+    <img src="ask4.png" alt="عکس ۴" />
+  </div>
+</section>
+  
+  
+  
+  <section class="categories">
+  <h2>دسته‌بندی محصولات</h2>
+  <div class="category-list">
+    <div class="category-box">
+      <h3>شلوارها</h3>
+      <a href="#" class="btn">مشاهده و خرید</a>
+    </div>
+    <div class="category-box">
+      <h3>پیراهن‌ها</h3>
+      <a href="#" class="btn">مشاهده و خرید</a>
+    </div>
+    <div class="category-box">
+      <h3>تی‌شرت‌ها</h3>
+      <a href="#" class="btn">مشاهده و خرید</a>
+    </div>
+    <div class="category-box">
+      <h3>کفش‌ها</h3>
+      <a href="#" class="btn">مشاهده و خرید</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <h1>فروشگاه آنلاین لباس مردانه</h1>
+
+  <section class="products">
+      
+    <div class="product">
+      <img src="https://via.placeholder.com/150x150?text=پیراهن" alt="پیراهن">
+      <h3>پیراهن مردانه</h3>
+      <p>قیمت: ۹۵۰,۰۰۰ تومان</p>
+      <label>سایز:
+        <select id="size-shirt">
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>2XL</option>
+        </select>
+      </label>
+      <button onclick="addToCart('پیراهن مردانه', 950000, document.getElementById('size-shirt').value)">افزودن</button>
+    </div>
+    
+    
+<div class="product">
+  <img src="https://via.placeholder.com/150x150?text=کفش" alt="کفش">
+  <h3>کفش ورزشی</h3>
+  <p>قیمت: ۱,۲۵۰,۰۰۰ تومان</p>
+  <label>سایز:
+    <select id="size-shoes">
+      <option>41</option>
+      <option>42</option>
+      <option>43</option>
+      <option>44</option>
+    </select>
+  </label>
+  <button onclick="addToCart('کفش ورزشی', 1250000, document.getElementById('size-shoes').value)">افزودن</button>
+</div>
+    
+    
+
+    <div class="product">
+      <img src="https://via.placeholder.com/150x150?text=تی‌شرت" alt="تی‌شرت">
+      <h3>تی‌شرت ساده</h3>
+      <p>قیمت: ۷۵۰,۰۰۰ تومان</p>
+      <label>سایز:
+        <select id="size-tshirt">
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>2XL</option>
+        </select>
+      </label>
+      <button onclick="addToCart('تی‌شرت ساده', 750000, document.getElementById('size-tshirt').value)">افزودن</button>
+    </div>
+  </section>
+
+ <div id="cart-panel" class="cart-panel">
+  <h2>سبد خرید</h2>
+  <ul id="cart-list"></ul>
+  <p id="total">مجموع: ۰ تومان</p>
+  <button onclick="checkout()">پرداخت</button>
+  <div id="payment-info"></div>
+</div>
+  
+  
+  
+  
+  
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="about">
+      <h3>درباره فروشگاه استایل کلاسیک</h3>
+      <p>فروشگاه اینترنتی پوشاک مردانه با تمرکز بر استایل‌های کلاسیک و اولدمانی. با بهترین کیفیت و ارسال سریع به سراسر ایران.</p>
+      <p><strong>آدرس سایت:</strong> www.oldmanstyle.ir</p>
+      <p><strong>شماره تماس:</strong> 09037519586</p>
+    </div>
+    <div class="social">
+      <h4>ارتباط با ما</h4>
+      <ul>
+        <li><a href="https://t.me/oldmanstyle">تلگرام</a></li>
+        <li><a href="https://wa.me/989121234567">واتساپ</a></li>
+        <li><a href="https://instagram.com/oldmanstyle.ir">اینستاگرام</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    © ۲۰۲۵ فروشگاه استایل کلاسیک. همه حقوق محفوظ است.
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <!-- JavaScript داخل HTML -->
+  <script>
+  let cart = [];
+  let total = 0;
+
+  // موجودی سایزها به تفکیک محصولات
+  const stock = {
+  "تی‌شرت ساده": {
+    L: false,
+    M: true,
+    XL: true,
+    "2XL": true
+  },
+  "پیراهن مردانه": {
+    L: true,
+    M: true,
+    XL: true,
+    "2XL": true
+  },
+  "کفش ورزشی": {
+    L: true,
+    M: true,
+    XL: false,
+    "2XL": true
+  }
+};
+
+  function addToCart(name, price, size) {
+    if (!stock[name][size]) {
+      alert(`سایز ${size} برای محصول "${name}" موجود نمی‌باشد.`);
+      return;
+    }
+
+    cart.push({ name, price, size });
+    total += price;
+
+    updateCartUI();
+  }
+
+  function updateCartUI() {
+    const cartList = document.getElementById("cart-list");
+    const totalEl = document.getElementById("total");
+    cartList.innerHTML = "";
+    cart.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = `${item.name} - سایز: ${item.size} - قیمت: ${item.price.toLocaleString()} تومان`;
+      cartList.appendChild(li);
+    });
+    totalEl.textContent = `مجموع: ${total.toLocaleString()} تومان`;
+  }
+
+  function checkout() {
+    const paymentInfo = document.getElementById("payment-info");
+    paymentInfo.innerHTML =
+      `<p>مبلغ قابل پرداخت: ${total.toLocaleString()} تومان</p>
+      <p>لطفاً مبلغ را به شماره کارت زیر واریز کنید:</p>
+      <p><strong>6037-9911-2345-6789</strong> به نام فروشگاه لباس</p>`;
+  }
+  function toggleCart() {
+  const panel = document.getElementById("cart-panel");
+  panel.classList.toggle("open");
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  background-color: #f5f5f5;
+}
+
+.hero {
+  background: url('A_website_homepage_image_for_an_online_clothing_st.png') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero-content {
+  max-width: 450px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #2e6f5c;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #24584a;
+}
+
+/* بخش محصولات */
+.products {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2e6f5c;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  background: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card p {
+  margin: 0 15px 10px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.price {
+  display: block;
+  margin: 10px 15px 20px;
+  font-weight: bold;
+  color: #2e6f5c;
+}
+
+
+
+
+
+
+
+body {
+ 
+  background-color: #f4f4f4;
+  direction: rtl;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #2e6f5c;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.product img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: #2e6f5c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product button:hover {
+  background-color: #24584a;
+}
+
+.cart {
+  background: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  border-bottom: 1px dashed #ccc;
+  padding: 8px 0;
+}
+
+.cart button {
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#payment-info {
+  margin-top: 20px;
+  background: #eef6f4;
+  padding: 15px;
+  border-radius: 10px;
+  color: #1e4b3c;
+}
+
+
+
+
+
+
+
+
+.categories {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2e6f5c;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category-box {
+  background-color: #e6f0ec;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+}
+
+.category-box h3 {
+  font-size: 1.3rem;
+  color: #1e4b3c;
+  margin-bottom: 20px;
+}
+
+.category-box .btn {
+  background-color: #2e6f5c;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.category-box .btn:hover {
+  background-color: #24584a;
+}
+
+
+
+
+  .cart-toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .cart-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    z-index: 999;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+  }
+
+  .cart-panel.open {
+    right: 0;
+  }
+
+  .cart-panel h2 {
+    margin-top: 0;
+  }
+
+  .cart-panel ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  
+.image-banner {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+.image-track {
+  display: flex;
+  gap: 32px;
+  padding: 0 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-track img {
+  flex-shrink: 0;
+  width: 300px; /* عرض بیشتر از صفحه */
+  max-width: none;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
